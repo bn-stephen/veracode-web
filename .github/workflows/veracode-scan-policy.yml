@@ -46,4 +46,3 @@ policy-scan:
           vid: '${{ secrets.VERACODE_API_ID }}'
           vkey: '${{ secrets.VERACODE_API_KEY }}'
           scantimeout: 15
-        continue-on-error: true

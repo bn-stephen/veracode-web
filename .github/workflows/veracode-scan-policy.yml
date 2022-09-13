@@ -46,7 +46,8 @@ jobs:
           vid: '${{ secrets.VERACODE_API_ID }}'
           vkey: '${{ secrets.VERACODE_API_KEY }}'
           scantimeout: 15
-          
+        continue-on-error: true
+        
   get-policy-flaws:
     runs-on: ubuntu-latest
     needs: policy-scan
